@@ -3,7 +3,6 @@ import {
   View,
   Text,
   Image,
-  StatusBar
   
 } from 'react-native';
 
@@ -14,14 +13,7 @@ import { styles } from './styles';
 
 export function SignIn(){
   return (
-    <View style = {styles.container}>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="transparent"
-        translucent
-      
-      />
-
+    <View style = {styles.container}>   
       <Image 
         source={IllustrationImg}
         style={styles.image}
@@ -30,9 +22,9 @@ export function SignIn(){
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Organize {`\n`}
-          suas jogatinas {`\n`}
-          facilmente
+          Conecte-se {`\n`}
+          e organize suas {`\n`}
+          jogatinas
         </Text>
 
         <Text style={styles.subtitle}>
@@ -42,9 +34,8 @@ export function SignIn(){
         </Text>
         <ButtonIcon 
           title="Entrar com Discord"
-          activeOpacity={0.7}
-          
-        />
+          activeOpacity={0.7}          
+        /> 
 
       </View>      
     </View>
