@@ -10,7 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 import IllustrationImg from '../../assets/illustration.png';
 import { styles } from './styles';
 
-import{ ButtonIcon } from '../../components/ButtomIcon';
+import{ ButtonIcon } from '../../components/ButtonIcon';
 import { Background } from '../../components/Background';
 
 export function SignIn(){
