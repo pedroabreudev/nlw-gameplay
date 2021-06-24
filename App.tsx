@@ -7,6 +7,7 @@ import { useFonts } from 'expo-font';
 
 
 import { Routes } from './src/routes';
+import { AuthProvider } from './src/hooks/auth';
 import { Background } from './src/components/Background';
 
 
@@ -27,9 +28,12 @@ export default function App(){
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
-      />      
-      <Routes />
+      />
       
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
+
     </Background>
   );
 }
