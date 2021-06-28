@@ -21,8 +21,7 @@ export function Profile () {
 
   const randomIndex = Math.floor(Math.random() * 5)
 
-  const { user } = useAuth();
-  console.log(user);
+  const { user } = useAuth();  
   return(
     <View style = {styles.container}>      
       
